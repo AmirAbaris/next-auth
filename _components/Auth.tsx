@@ -1,13 +1,14 @@
 import { SignedOut, SignInButton, SignedIn, UserButton } from "@clerk/nextjs";
+import { Button } from "@nextui-org/react";
 
 const Auth = () => {
     return (
         <div>
             <SignedOut>
                 <SignInButton mode="modal">
-                    <button>
+                    <Button color="primary">
                         Sign In
-                    </button>
+                    </Button>
                 </SignInButton>
             </SignedOut>
             <SignedIn>
